@@ -1,0 +1,149 @@
+[
+  {
+    "id": "aws7rs",
+    "type": "webpage",
+    "author": [{"literal": "Amazon Web Services"}],
+    "title": "About the migration strategies",
+    "container-title": "AWS Prescriptive Guidance: Guide for AWS large migrations",
+    "URL": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "gartner5rs",
+    "type": "report",
+    "author": [{"family": "Watson", "given": "Richard"}],
+    "title": "Migrating applications to the cloud: Rehost, refactor, revise, rebuild, or replace?",
+    "publisher": "Gartner, Inc.",
+    "number": "G00207162",
+    "issued": {"date-parts": [[2010, 12, 3]]},
+    "URL": "https://web.archive.org/web/20190929003739/https://www.gartner.com/en/documents/1485116",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "apra234",
+    "type": "standard",
+    "author": [{"literal": "Australian Prudential Regulation Authority"}],
+    "title": "Prudential Standard CPS 234 Information Security",
+    "publisher": "Australian Prudential Regulation Authority",
+    "issued": {"date-parts": [[2019, 7]]},
+    "URL": "https://www.apra.gov.au/standards/cps-234",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "apra230",
+    "type": "standard",
+    "author": [{"literal": "Australian Prudential Regulation Authority"}],
+    "title": "Prudential Standard CPS 230 Operational Risk Management",
+    "publisher": "Australian Prudential Regulation Authority",
+    "issued": {"date-parts": [[2026, 7]]},
+    "URL": "https://www.apra.gov.au/standards/cps-230",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "apracloud",
+    "type": "report",
+    "author": [{"literal": "Australian Prudential Regulation Authority"}],
+    "title": "Outsourcing involving cloud computing services",
+    "genre": "Information paper",
+    "publisher": "Australian Prudential Regulation Authority",
+    "issued": {"date-parts": [[2018, 9, 24]]},
+    "URL": "https://web.archive.org/web/20250130134215/https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "pmbok7",
+    "type": "book",
+    "author": [{"literal": "Project Management Institute"}],
+    "title": "A Guide to the Project Management Body of Knowledge (PMBOK Guide) and The Standard for Project Management",
+    "edition": "7",
+    "publisher": "Project Management Institute",
+    "publisher-place": "Newtown Square, PA, USA",
+    "issued": {"date-parts": [[2021]]},
+    "ISBN": "978-1-62825-664-2"
+  },
+  {
+    "id": "iso31000",
+    "type": "standard",
+    "title": "Risk management — Guidelines",
+    "number": "ISO 31000:2018",
+    "publisher": "International Organization for Standardization",
+    "issued": {"date-parts": [[2018, 2]]},
+    "URL": "https://www.iso.org/standard/65694.html",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "iso10007",
+    "type": "standard",
+    "title": "Quality management — Guidelines for configuration management",
+    "number": "ISO 10007:2017",
+    "publisher": "International Organization for Standardization",
+    "issued": {"date-parts": [[2017, 3]]},
+    "URL": "https://www.iso.org/standard/70400.html",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "iso9001",
+    "type": "standard",
+    "title": "Quality management systems — Requirements",
+    "number": "ISO 9001:2026",
+    "publisher": "International Organization for Standardization",
+    "issued": {"date-parts": [[2026, 9]]},
+    "URL": "https://www.iso.org/standard/9001",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "iso9001_2015",
+    "type": "standard",
+    "title": "Quality management systems — Requirements",
+    "number": "ISO 9001:2015",
+    "publisher": "International Organization for Standardization",
+    "issued": {"date-parts": [[2015, 9]]},
+    "URL": "https://www.iso.org/standard/62085.html",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "schwalbe",
+    "type": "book",
+    "author": [{"family": "Schwalbe", "given": "Kathy"}],
+    "title": "Information Technology Project Management",
+    "edition": "9",
+    "publisher": "Cengage Learning",
+    "publisher-place": "Boston, MA, USA",
+    "issued": {"date-parts": [[2019]]},
+    "ISBN": "978-1-337-10135-6"
+  },
+  {
+    "id": "flyvbjerg",
+    "type": "article-magazine",
+    "author": [
+      {"family": "Flyvbjerg", "given": "Bent"},
+      {"family": "Budzier", "given": "Alexander"}
+    ],
+    "title": "Why your IT project may be riskier than you think",
+    "container-title": "Harvard Business Review",
+    "volume": "89",
+    "issue": "9",
+    "page": "23-25",
+    "issued": {"date-parts": [[2011, 9]]},
+    "URL": "https://hbr.org/2011/09/why-your-it-project-may-be-riskier-than-you-think",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "githubpr",
+    "type": "webpage",
+    "author": [{"literal": "GitHub"}],
+    "title": "Pull requests",
+    "container-title": "GitHub Docs",
+    "URL": "https://docs.github.com/en/pull-requests/reference/pull-requests",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  },
+  {
+    "id": "jira",
+    "type": "webpage",
+    "author": [{"literal": "Atlassian"}],
+    "title": "What is Jira",
+    "container-title": "Atlassian",
+    "URL": "https://www.atlassian.com/software/jira/guides/getting-started/introduction",
+    "accessed": {"date-parts": [[2026, 10, 21]]}
+  }
+]

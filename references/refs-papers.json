@@ -1,0 +1,117 @@
+[
+  {
+    "id": "jamshidi2013",
+    "type": "article-journal",
+    "author": [
+      {"family": "Jamshidi", "given": "Pooyan"},
+      {"family": "Ahmad", "given": "Aakash"},
+      {"family": "Pahl", "given": "Claus"}
+    ],
+    "title": "Cloud migration research: A systematic review",
+    "container-title": "IEEE Transactions on Cloud Computing",
+    "volume": "1",
+    "issue": "2",
+    "page": "142-157",
+    "issued": {"date-parts": [[2013]]},
+    "DOI": "10.1109/TCC.2013.10"
+  },
+  {
+    "id": "gholami2016",
+    "type": "article-journal",
+    "author": [
+      {"family": "Gholami", "given": "Mahdi Fahmideh"},
+      {"family": "Daneshgar", "given": "Farhad"},
+      {"family": "Low", "given": "Graham"},
+      {"family": "Beydoun", "given": "Ghassan"}
+    ],
+    "title": "Cloud migration process—A survey, evaluation framework, and open challenges",
+    "container-title": "Journal of Systems and Software",
+    "volume": "120",
+    "page": "31-69",
+    "issued": {"date-parts": [[2016, 10]]},
+    "DOI": "10.1016/j.jss.2016.06.068"
+  },
+  {
+    "id": "oparamartins2016",
+    "type": "article-journal",
+    "author": [
+      {"family": "Opara-Martins", "given": "Justice"},
+      {"family": "Sahandi", "given": "Reza"},
+      {"family": "Tian", "given": "Feng"}
+    ],
+    "title": "Critical analysis of vendor lock-in and its impact on cloud computing migration: A business perspective",
+    "container-title": "Journal of Cloud Computing",
+    "volume": "5",
+    "issue": "1",
+    "number": "4",
+    "issued": {"date-parts": [[2016, 4]]},
+    "DOI": "10.1186/s13677-016-0054-z"
+  },
+  {
+    "id": "asadi2017",
+    "type": "article-journal",
+    "author": [
+      {"family": "Asadi", "given": "Shahla"},
+      {"family": "Nilashi", "given": "Mehrbakhsh"},
+      {"family": "Husin", "given": "Abd Razak Che"},
+      {"family": "Yadegaridehkordi", "given": "Elaheh"}
+    ],
+    "title": "Customers perspectives on adoption of cloud computing in banking sector",
+    "container-title": "Information Technology and Management",
+    "volume": "18",
+    "issue": "4",
+    "page": "305-330",
+    "issued": {"date-parts": [[2017, 12]]},
+    "DOI": "10.1007/s10799-016-0270-8"
+  },
+  {
+    "id": "stewart2022",
+    "type": "article-journal",
+    "author": [
+      {"family": "Stewart", "given": "Harrison"}
+    ],
+    "title": "The hindrance of cloud computing acceptance within the financial sectors in Germany",
+    "container-title": "Information and Computer Security",
+    "volume": "30",
+    "issue": "2",
+    "page": "206-224",
+    "issued": {"date-parts": [[2022, 3]]},
+    "DOI": "10.1108/ICS-01-2021-0002"
+  },
+  {
+    "id": "gholami2017",
+    "type": "article-journal",
+    "author": [
+      {"family": "Gholami", "given": "Mahdi Fahmideh"},
+      {"family": "Daneshgar", "given": "Farhad"},
+      {"family": "Beydoun", "given": "Ghassan"},
+      {"family": "Rabhi", "given": "Fethi"}
+    ],
+    "title": "Challenges in migrating legacy software systems to the cloud—An empirical study",
+    "container-title": "Information Systems",
+    "volume": "67",
+    "page": "100-113",
+    "issued": {"date-parts": [[2017, 7]]},
+    "DOI": "10.1016/j.is.2017.03.008"
+  },
+  {
+    "id": "khadka2014",
+    "type": "paper-conference",
+    "author": [
+      {"family": "Khadka", "given": "Ravi"},
+      {"family": "Batlajery", "given": "Belfrit V."},
+      {"family": "Saeidi", "given": "Amir M."},
+      {"family": "Jansen", "given": "Slinger"},
+      {"family": "Hage", "given": "Jurriaan"}
+    ],
+    "title": "How do professionals perceive legacy systems and software modernization?",
+    "container-title": "Proceedings of the 36th International Conference on Software Engineering",
+    "event-title": "ICSE '14: 36th International Conference on Software Engineering",
+    "event-place": "Hyderabad, India",
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "page": "36-47",
+    "issued": {"date-parts": [[2014, 5]]},
+    "DOI": "10.1145/2568225.2568318"
+  }
+]
