@@ -46,7 +46,38 @@ The project runs for 250 working days, from Monday 1 February 2027 to Friday 28 
 
 ## 5.3 Detailed Gantt Chart
 
+Figures 4 and 5 show every activity, its timing, its dependencies (grey arrows) and the critical path (red). The management, foundation, compliance, training and closure activity is discussed in Figure 4. Figure 5 covers the three migration waves. Dependencies which span between the two figures, e.g. Wave 1 functional testing (4.4.1) must complete prior to Wave 1 training (8.3.1), are included in the predecessor column of Appendix A, which also provides the exact start and finish dates, responsibility and float for each activity.
+
+![Figure 4. Detailed Gantt chart – management, foundation, compliance, training and closure (WBS 1.0–3.0 and 7.0–9.0)](../figures/gantt-detail-a.png)
+
+![Figure 5. Detailed Gantt chart – migration waves (WBS 4.0–6.0)](../figures/gantt-detail-b.png)
+
+The most significant dependencies and their reasons are explained in table 12.
+
+Table: Table 12. Key dependencies
+
+| Predecessor | Successor | Reason |
+|------------------------|------------------------|------------------------------------------------|
+| 2.3.1 Wave plan | 3.1.1, 7.1.1, 8.1.1 | The landing zone design, compliance assessment and change impact analysis all depend on knowing which systems move, how and when |
+| M2 Landing zone ready | 4.1.1 Wave 1 design | No workload moves until the secure foundation is signed off |
+| 7.2.1 Regulator notification | 4.5.1 Wave 1 cutover | APRA is notified before the first production workload moves to AWS |
+| 4.6.2 Wave 1 lessons learned | 5.3.1 Wave 2 trial migration | Problems found in Wave 1 are fixed before Wave 2 data is moved |
+| 5.6.3 Wave 2 lessons learned | 6.4.1 Wave 3 trial migration | The most critical systems benefit from two rounds of lessons |
+| 6.2.1 and 6.3.1 Wave 3 builds | 6.4.1 and 6.5.2 | Data cannot be migrated or security-tested until the target systems exist |
+| 8.3.1, 8.3.2, 8.3.3 Staff training | Each go/no-go | Staff are trained before they use the new systems |
+| 8.4.1 Customer communications | 6.6.1 Wave 3 cutover | Customers receive at least two weeks' notice of the internet banking change |
+| M5 Wave 3 live | 9.1.1 Stability period | The 30-day stability period starts only after the last wave is live |
+| 7.4.1 Compliance sign-off | 9.4.1 Final report | The project cannot close without compliance sign-off |
+
 ## 5.4 Critical Path Analysis
+
+The critical path runs through the whole project: charter (1.1.1–M1) → discovery (2.1.1–2.3.1) → landing zone design, identity and security controls (3.1.1, 3.3.1–3.5.1) → every step of Wave 1 → Wave 2 trial migration, testing and cutover → Wave 3 trial migration, testing and cutover → stability period → archiving, decommissioning and closure (9.2.1–9.5.1). There are 66 lines in the schedule and 40 of these lines are critical.
+
+The wave dependency links the lessons learned deliberately to make the waves linked in series. This means that each wave of testing is impactful on the critical path and every week that Wave 1 testing is delayed results in a delayed go-live date for Wave 3. The project manager then monitors the critical path on a weekly basis. The plan has three types of schedule reserve:
+
+- **Float on non-critical work.** The internet banking refactor (6.2.1) has 18 days of float and the Wave 2 build (5.2.1) also has 18 days, so the two largest build activities can overrun by more than three weeks without moving any milestone. There are 5 days of float for network connectivity (3.2.1).
+- **Spare cutover weekends.** Wave 3 will be live on 19 November 2027, but cutovers may be available on 26 November, 3 December and 10 December prior to the change freeze. This leaves three weekends of safety for the most dangerous wave.
+- **Time before the hard deadline.** With all three weekends omitted the next cutover window would be 14-16 January 2028 with closure in early March 2028. This is before the end of the hardware support contract on 31 March 2028 (risk R16, Section 7).
 
 ## 5.5 Schedule Control
 
