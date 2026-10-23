@@ -28,7 +28,21 @@ Table: Table 11. WBS dictionary (level 1)
 
 ## 5.1 Scheduling Approach
 
+The schedule was built from the level-3 activities of the WBS using the critical path method (CPM). Each activity has a duration in working days, one or more predecessors, and a responsible person. A forward pass calculates the earliest start and finish of each activity; a backward pass calculates the latest dates; and the difference between them is the total float [@schwalbe]. Activities with zero float form the critical path. Durations were estimated by analogy with the bank's earlier infrastructure projects and from the partner consultancy's estimates, and the riskiest estimate (the internet banking refactor) was checked with a three-point estimate (Section 7.5).
+
+The calendar runs Monday to Friday and excludes Victorian public holidays. All dependencies are finish-to-start. Five scheduling rules shape the plan:
+
+1. **Weekend cutovers.** The go/no-go decision is made on a Friday, the cutover runs from Friday night to Sunday, and the system is live on Monday. Each go/no-go activity can only start on a Friday.
+2. **End of financial year.** HR and payroll move only after the 30 June processing is complete, so a year's payroll is never split across two systems.
+3. **Lessons learned between waves.** Each wave's lessons-learned review must be finished before the next wave's trial migration starts.
+4. **Change freeze.** No changes to live systems from 13 December 2027 to 7 January 2028.
+5. **Stability before decommissioning.** Old servers are switched off only after at least 30 days of stable running and after the change freeze ends.
+
 ## 5.2 Milestones and Summary Schedule
+
+The project runs for 250 working days, from Monday 1 February 2027 to Friday 28 January 2028. Figure 3 shows the summary schedule with the six milestones from Table 9. The three waves overlap: Wave 2 and Wave 3 design and build start while Wave 1 is still under way, but each wave's data migration, testing and cutover follow the previous wave in sequence.
+
+![Figure 3. Summary Gantt chart by WBS level 1](../figures/gantt-summary.png)
 
 ## 5.3 Detailed Gantt Chart
 
