@@ -36,7 +36,33 @@ Table: Table 22. Change approval thresholds
 
 ## 10.4 Change Request Form
 
+Table: Table 23. Change request form fields
+
+| Field | Content |
+|--------------------|--------------------------------------------------------------|
+| CR ID and date | Unique number assigned when logged; date raised |
+| Requester | Name and business unit |
+| Description | What should change |
+| Reason and benefit | Why the change is needed and what happens if it is not made |
+| Priority | Urgent, high, medium or low |
+| Impact assessment | Scope; schedule (days, critical path or float); cost (AUD); risk; quality; compliance; resources |
+| Options considered | Alternatives, including doing nothing |
+| Decision | Approved, rejected or deferred, with the reason |
+| Approver and date | Name, role and date of the decision |
+| Implementation | Owner, completion date and verification by a second person |
+
 ## 10.5 Change Log
+
+Table 24 shows the change log with illustrative entries. It shows how the thresholds work and why the impact assessment matters.
+
+Table: Table 24. Change log (illustrative entries)
+
+| CR | Change requested | Impact assessment | Decision |
+|--------|------------------------------------|---------------------------------------------|------------------|
+| CR-01 | Add a mobile banking API to the internet banking refactor (Digital Banking) | +15 days of partner effort on 6.2.1, absorbed by its 18 days of float, so M5 does not move; float falls to 3 days, so the probability of R07 is reassessed; +AUD 60,000, funded by Digital Banking | Approved by the CCB |
+| CR-02 | Bring the Wave 2 cutover forward by four weeks (Finance) | Would overlap Wave 1 hypercare, skip the lessons-learned step and cut UAT in half; raises R01, R02 and R06 | Rejected by the CCB: the risk to customer data outweighs the earlier reporting benefit |
+| CR-03 | Extend Wave 2 performance testing (5.4.3) by 3 days to include a month-end load test | Within the activity's 10 days of float; AUD 6,000; improves confidence for R13 | Approved by the project manager |
+| CR-04 | Migrate the staff intranet as part of Wave 2 (Corporate Services) | +20 days and +AUD 90,000; not in the business case; adds risk to Wave 2 | Deferred to a post-project backlog |
 
 # 11 Configuration Management Using GitHub
 
