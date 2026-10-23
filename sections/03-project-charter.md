@@ -51,7 +51,53 @@ Table: Table 4. SMART project objectives
 
 ## 3.4 Scope Statement
 
+**In scope.** The project migrates six systems and retires one, as shown in Table 5. The migration strategy for each system follows the AWS "7 Rs" [@aws7rs] and was chosen by balancing business value, technical condition and risk.
+
+Table: Table 5. Systems in scope
+
+| Wave | System | Strategy | Reason |
+|--------|---------------------------|--------------|-----------------------------------------|
+| 1 | HR and payroll | Repurchase | Move to a software-as-a-service (SaaS) payroll product; the current package is near end of life |
+| 1 | Internal document management | Rehost | Low complexity; fastest path to AWS |
+| 2 | Customer CRM | Replatform | Move to managed AWS database services to reduce maintenance |
+| 2 | Data warehouse and reporting | Replatform | Gains elastic capacity for month-end reporting |
+| 2 | Old reporting server | Retire | Replaced by the new data warehouse |
+| 3 | Loan origination system | Replatform | Business-critical; moved after earlier waves prove the process |
+| 3 | Internet banking portal | Refactor | Redesigned for the cloud so it can scale for customer peaks |
+
+The project also includes building the AWS landing zone (accounts, network, identity and security controls), data migration and reconciliation, all testing, staff training, customer communications, compliance activities, and decommissioning the old servers.
+
+**Out of scope.** The core banking ledger (retained on-premises), the ATM network and branch hardware, end-user devices, new features beyond the changes needed to run in the cloud, and changes to business processes.
+
+**Deliverables.**
+
+- Project charter and project management plan with approved scope, schedule and cost baselines
+- System inventory, dependency map, migration strategy and wave plan
+- Secure AWS landing zone with network connectivity, identity and access management, and logging
+- Six systems running on AWS and one server retired, each with test reports and user acceptance sign-off
+- APRA compliance assessment, regulator notification and final compliance sign-off
+- Training materials, trained staff and customer communications
+- Archived legacy data, decommissioned servers, and a final project report with lessons learned
+
+**Assumptions.** The required AWS services are available in the Sydney and Melbourne regions; business units provide user acceptance testers when scheduled; the SaaS payroll vendor can store data in Australia; legacy data quality is good enough after cleansing; and no major regulatory change occurs during the project.
+
+**Constraints.** There's a capped budget of AUD 4.5 million. The project must finish before the hardware support contract ends on 31 March 2028, and the planned finish is 28 January 2028. All data must stay in Australia. Cutovers may only happen on weekends and not during end-of-financial-year processing or the change freeze (13 December 2027 to 7 January 2028). The bank must continue to meet APRA prudential standards and the Privacy Act 1988 (Cth). Note that CPS 230 treats providers of core technology services as material service providers, so the arrangement with AWS will need to be included on the bank's register of material service providers, under a formal arrangement, with notification to APRA within the applicable time periods [@apra230].
+
 ## 3.5 Success and Acceptance Criteria
+
+Table: Table 6. Success and acceptance criteria
+
+| Area | Criterion | Accepted by |
+|--------------|------------------------------------------------------|------------------------|
+| Data integrity | 100% of records reconciled by count and checksum after every migration | Data Migration Specialist and business system owner |
+| Availability | At least 99.9% availability for each migrated system in its first three months | CIO |
+| Performance | Response times equal to or better than the pre-migration baseline under peak load | Test Lead |
+| Security | No open critical or high security findings at go-live; independent audit passed | Security and Compliance Lead |
+| User acceptance | All critical UAT test cases passed and signed off by the business system owner | Business system owners |
+| Compliance | Final compliance sign-off with no adverse regulator findings | Chief Risk Officer |
+| Time and cost | Project closed by 28 January 2028 within AUD 4.5 million | Steering committee |
+
+Each wave is accepted at its go/no-go meeting against these criteria. The whole project is accepted when the sponsor signs the closure report (task 9.5.1). The 20% cost reduction in BO1 is a benefit that the sponsor will measure after the project closes.
 
 ## 3.6 Stakeholders, Roles and Responsibilities
 
