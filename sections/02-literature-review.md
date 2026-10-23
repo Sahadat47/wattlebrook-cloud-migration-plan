@@ -30,4 +30,19 @@ APRA has released an information paper prior to CPS 230 on outsourcing, in relat
 
 ## 2.5 Project Management Frameworks
 
+The plan is based on the PMBOK Guide 7th Edition which is principles-based. It sets out twelve principles and eight performance domains and encourages tailoring the approach to the project [@pmbok7]. The tools are detailed and based on the IT project management practice described by Schwalbe [@schwalbe] and include a charter, a WBS, a critical path method, an expected monetary value, quality management and integrated change control. The risk management is done according to ISO 31000 [@iso31000]. In fact, the finding by Flyvbjerg and Budzier, that IT projects tend to have "fat-tailed" overruns [@flyvbjerg] provides a good rationale for planning for an extreme event rather than an average one, namely the explicit reserve. The overall plan is predictive as there are external constraints that are fixed such as the hardware support deadline, regulatory notifications and change freeze. Refactoring work within Wave 3 is carried out in 2-weekly increments. This is an example of tailoring that is encouraged by PMBOK, a hybrid approach.
+
 ## 2.6 Implications for the Plan
+
+Table: Table 1. How the literature shapes the plan
+
+| Finding | Sources | Decision in this plan |
+|----------------------------------------|--------------|-------------------------------------------------|
+| No single migration strategy suits every system | [@gartner5rs; @aws7rs] | A strategy is chosen per system (Table 5) |
+| Refactoring during migration is costly and risky | [@aws7rs] | Only the internet banking portal is refactored, last, with the largest float |
+| Failures come from poor preparation and hidden dependencies | [@gholami2017; @jamshidi2013] | Discovery and dependency mapping (WBS 2.0) before any design |
+| Modernisation challenges are organisational as well as technical | [@khadka2014] | A dedicated training and change management package (WBS 8.0) |
+| Trust and security decide whether banking cloud services are accepted | [@stewart2022; @asadi2017] | Security testing gates before every go-live; customer communication |
+| Cloud migration increases vendor lock-in | [@oparamartins2016] | Risk R10 accepted with portable technologies and an exit plan |
+| Regulators expect staged transitions and active service provider oversight | [@apracloud; @apra230] | Three waves with go/no-go criteria; early compliance assessment and notification |
+| IT project overruns are fat-tailed | [@flyvbjerg] | AUD 400,000 contingency reserve and three spare cutover weekends |
