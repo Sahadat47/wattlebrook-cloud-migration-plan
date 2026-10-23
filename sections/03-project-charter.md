@@ -133,10 +133,50 @@ Stakeholders were mapped by their power over the project and their interest in i
 
 The communication activities for each group are detailed in the communication management plan (Section 12).
 
-![Figure 1. Stakeholder power/interest grid](figures/stakeholder-grid.png){width=88%}
+![Figure 1. Stakeholder power/interest grid](../figures/stakeholder-grid.png)
 
 ## 3.8 High-Level Risks and Dependencies
 
+The highest risks identified at charter stage are data loss during migration, cutovers running longer than the weekend window, systems depending on each other in ways that are not yet documented, the internet banking refactor taking longer than planned, and non-compliance with APRA standards. These are analysed in full in Section 7.
+
+The main dependencies are:
+
+- **External** – AWS service availability in Australian regions, delivery by the partner consultancy and the payroll SaaS vendor, and timely engagement with APRA.
+- **Internal** – business testers being available for user acceptance testing, and data owners being available to approve data cleansing rules.
+- **Logical** – the landing zone must be ready before any system moves; each wave's lessons learned must be applied before the next wave's trial migration; payroll must move after end-of-financial-year processing; and no cutover may happen during the change freeze.
+
 ## 3.9 Budget Summary and Milestones
 
+Table: Table 8. Budget summary
+
+| Category | AUD |
+|--------------------------------------------------------------|------------:|
+| Internal staff (project team labour) | 1,900,000 |
+| AWS partner consultants and contractors | 1,000,000 |
+| AWS cloud running costs during the project (including parallel running) | 500,000 |
+| Software licences and migration tools (including SaaS payroll) | 350,000 |
+| Training and change management | 200,000 |
+| Testing and external security audit (penetration testing) | 150,000 |
+| **Planned costs** | **4,100,000** |
+| Contingency reserve (based on the risk analysis in Section 7.5) | 400,000 |
+| **Total budget** | **4,500,000** |
+
+Table: Table 9. Key milestones
+
+| ID | Milestone | Date |
+|----|------------------------------------------|----------------|
+| M1 | Project charter approved | Fri 19 Feb 2027 |
+| M2 | AWS landing zone ready | Wed 19 May 2027 |
+| M3 | Wave 1 live (cutover weekend 17–18 July) | Fri 16 Jul 2027 |
+| M4 | Wave 2 live (cutover weekend 18–19 September) | Fri 17 Sep 2027 |
+| M5 | Wave 3 live (cutover weekend 20–21 November) | Fri 19 Nov 2027 |
+| M6 | Old servers decommissioned and project closed | Fri 28 Jan 2028 |
+
 ## 3.10 Approval
+
+Table: Table 10. Charter approval
+
+| Name | Role | Signature | Date |
+|------------------|---------------------------|----------------------|-------------|
+| Helen Fraser | Project Sponsor, CIO | | 19 Feb 2027 |
+| Arjun Mehta | Project Manager | | 19 Feb 2027 |
