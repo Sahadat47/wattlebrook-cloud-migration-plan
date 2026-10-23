@@ -101,7 +101,39 @@ Each wave is accepted at its go/no-go meeting against these criteria. The whole 
 
 ## 3.6 Stakeholders, Roles and Responsibilities
 
+Table 7 defines each stakeholder's role and responsibilities. Responsibilities for each deliverable are assigned in more detail in the responsibility matrix in Section 6.3.
+
+Table: Table 7. Stakeholder roles and responsibilities
+
+| Stakeholder | Role | Key responsibilities |
+|-------------------------|------------------------|------------------------------------------------------------|
+| Helen Fraser, CIO | Project sponsor | Owns the business case; approves the charter, baselines and major changes; chairs the Change Control Board; releases contingency funds; accepts the final product |
+| Steering committee (CEO, CIO, CFO, Chief Risk Officer) | Governance | Meets monthly; decides on escalated risks, issues and changes; makes the Wave 3 go/no-go decision |
+| Arjun Mehta | Project manager | Plans and controls scope, schedule, cost and quality; runs the risk, issue and change logs; reports status; leads the project team |
+| Sarah Kim | Cloud architect | Designs the landing zone and target architecture; technical authority for migration designs; leads hypercare |
+| Thomas Walker | Security and compliance lead | Security controls and testing; APRA compliance assessment and regulator notification; coordinates the independent audit |
+| Mei Ling Tan | Data migration specialist | System inventory; data mapping, cleansing, trial migrations and reconciliation; data archiving |
+| Lucas Silva | Network engineer | Network connectivity to AWS; cutover network changes; server decommissioning |
+| Olivia Brown | Test lead | Test strategy; functional, performance and user acceptance testing; defect management |
+| Ahmed Hassan | Change and training manager | Change impact assessment; staff training; staff and customer communications |
+| AWS account team and partner consultancy | Vendor | Landing zone build support; replatforming and refactoring work under contract |
+| Business system owners (HR, Lending, Digital Banking, Finance) | Business representatives | Supply requirements and UAT testers; accept their systems |
+| APRA | External regulator | Receives required notifications; may review the bank's arrangements |
+| Internal audit | Independent assurance | Reviews controls and project governance |
+| Bank staff and customers | System users | Attend training; receive notices of changes and outages |
+
 ## 3.7 Stakeholder Management Strategy
+
+Stakeholders were mapped by their power over the project and their interest in it (Figure 1). Each quadrant has its own engagement approach:
+
+- **Manage closely** – the sponsor, the steering committee and AWS with its partner. They are involved in key decisions through fortnightly sponsor meetings, monthly steering committee reviews and weekly vendor meetings.
+- **Keep satisfied** – APRA, the Board and internal audit. They receive formal briefings at key points and early notice of anything that affects compliance, so that there are no surprises.
+- **Keep informed** – the project team, bank staff, customers and IT operations. They receive regular updates, training and advance notice of outages.
+- **Monitor** – the media, the public and the payroll SaaS vendor. The project watches for concerns and has prepared statements ready for any customer-facing incident.
+
+The communication activities for each group are detailed in the communication management plan (Section 12).
+
+![Figure 1. Stakeholder power/interest grid](figures/stakeholder-grid.png){width=88%}
 
 ## 3.8 High-Level Risks and Dependencies
 
