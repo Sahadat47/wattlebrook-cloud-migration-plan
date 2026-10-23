@@ -81,6 +81,8 @@ The wave dependency links the lessons learned deliberately to make the waves lin
 
 ## 5.5 Schedule Control
 
+The schedule is baselined when the project management plan is approved (task 1.2.1). The project manager then shares updates with the scheduling tool weekly and reports monthly on the status of the schedule to the steering committee, using earned value management (EVM) which includes the schedule performance index (SPI) and cost performance index (CPI). Any change to a milestone date or to a critical-path activity must go through the change request process in Section 10.
+
 # 6 Resource Allocation and Responsibility Matrix
 
 ## 6.1 Resource Plan
