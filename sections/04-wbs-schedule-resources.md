@@ -113,3 +113,26 @@ The schedule was checked for people who are over-allocated:
 - **Olivia Brown (test lead)** oversees performance testing at the same time as functional testing in Waves 2 and 3 (5.4.1 with 5.4.3, and 6.5.1 with 6.5.3). The two test analysts carry out the performance tests while the test lead coordinates.
 
 ## 6.3 Responsibility Matrix (RASCI)
+
+The RASCI matrix in Table 14 assigns responsibility for each major deliverable. **R** = Responsible (does the work), **A** = Accountable (owns the result and signs it off – exactly one per row), **S** = Supportive (provides resources or help), **C** = Consulted (gives input before the work is done) and **I** = Informed (is told the outcome).
+
+Table: Table 14. RASCI matrix
+
+| Deliverable | HF | SteerCo | AM | SK | TW | MT | LS | OB | AH | AWS | BO |
+|----------------------------|----|-------|----|----|----|----|----|----|----|-----|----|
+| Project charter (1.1) | A | C | R | C | C | – | – | – | – | – | C |
+| Project management plan and baselines (1.2–1.3) | A | I | R | C | C | C | C | C | C | – | I |
+| Discovery and wave plan (2.0) | I | I | A | R | C | R | C | – | – | S | C |
+| AWS landing zone (3.0) | I | – | C | A | R | – | R | – | – | S | – |
+| Wave design and build (4.1–4.2, 5.1–5.2, 6.1–6.3) | – | – | C | A | C | C | C | – | – | R | C |
+| Data migration and reconciliation | – | – | I | C | C | A/R | – | S | – | S | C |
+| Testing and UAT | – | – | I | C | R | S | – | A | – | S | R |
+| Go/no-go and cutover | A | C | R | R | C | R | R | C | I | S | C |
+| Hypercare | – | – | I | A | S | S | S | S | – | S | C |
+| Compliance and regulator notification (7.0) | I | C | I | C | A/R | – | – | – | – | S | – |
+| Training and communications (8.0) | I | – | C | – | – | – | – | – | A/R | – | S |
+| Change requests (Change Control Board) | A | I | R | C | C | – | – | – | – | – | C |
+| Decommissioning and archiving (9.1–9.3) | I | – | A | C | C | R | R | – | – | S | I |
+| Final report and closure (9.4–9.5) | A | I | R | C | C | C | C | C | C | – | I |
+
+*Key: HF = Helen Fraser (sponsor); SteerCo = steering committee; AM = Arjun Mehta (project manager); SK = Sarah Kim (cloud architect); TW = Thomas Walker (security and compliance); MT = Mei Ling Tan (data migration); LS = Lucas Silva (network); OB = Olivia Brown (test lead); AH = Ahmed Hassan (change and training); AWS = AWS account team and partner; BO = business system owners.*
