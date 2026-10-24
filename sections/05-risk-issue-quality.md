@@ -105,9 +105,32 @@ Each risk has a named owner who monitors its trigger. The project manager review
 
 ## 8.1 Risks and Issues
 
+A risk is an uncertain event that may happen in the future; an issue is a problem that is happening now and needs action. When a risk occurs it becomes an issue, and its contingency plan is used. Issues are recorded in an issue log in Jira so that every issue has an owner, a priority and a status that the whole team can see.
+
 ## 8.2 Issue Process and Escalation
 
+Anyone in the project can raise an issue. The project manager logs it, sets its priority, assigns an owner and tracks it until it is resolved and verified. Issues that cannot be resolved within the agreed time are escalated (Table 19).
+
+Table: Table 19. Issue priorities and escalation
+
+| Priority | Definition | Response time | Escalation |
+|----------|------------------------------------------------|---------------|--------------------------------------|
+| P1 Critical | Stops a cutover, causes a customer-facing outage, or is a security incident | 1 hour | Immediately to the sponsor and steering committee |
+| P2 High | Threatens a milestone or will cost more than AUD 50,000 | 1 business day | Project manager; to the sponsor if unresolved after 3 days |
+| P3 Medium | Delays an activity but stays within its float | 3 business days | Project manager |
+| P4 Low | Minor problem with no schedule or cost effect | Next weekly meeting | Activity owner |
+
 ## 8.3 Issue Log
+
+Table 20 shows the format of the issue log with illustrative entries of the kind the project expects.
+
+Table: Table 20. Issue log (illustrative entries)
+
+| ID | Raised | Issue | Priority | Owner | Action | Status |
+|-------|-----------|----------------------------------|-----------|-----------|------------------------------|----------|
+| I-01 | 12 Apr 2027 | Telecommunications provider delays the dedicated network link by two weeks | P2 | Lucas Silva | Use a temporary encrypted VPN for the landing zone build; link installed before the Wave 1 cutover | Closed |
+| I-02 | 24 Jun 2027 | Wave 1 trial: 0.4% of employee leave balances do not reconcile because of rounding | P2 | Mei Ling Tan | Correct the transformation rule and repeat the reconciliation | Closed |
+| I-03 | 6 Oct 2027 | Two Lending UAT testers are unavailable in the Wave 3 UAT week | P3 | Olivia Brown | Business owner nominates replacements; test scripts handed over in advance | Open |
 
 # 9 Quality Management
 
