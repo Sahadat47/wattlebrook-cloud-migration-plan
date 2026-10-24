@@ -49,6 +49,12 @@ Table: Table 16. Risk register
 
 ## 7.4 Qualitative Analysis
 
+Each risk is depicted on a probability–impact heat map in Figure 6. There are nine "Medium" risk and one "Low" risk, and six "High" risk. The greatest risk is R06, undocumented dependencies (score 16), which is typical when migrating legacy applications: point-to-point interfaces are not often documented over the course of several decades [@gholami2016]. The answer is to invest early in discovery (WBS 2.0), and test all interfaces in the various trial migrations.
+
+The heat map also shows a cluster of risks in the Severe impact column (R01, R03, R04 and R05) with low probabilities. Their scores will not do them justice: if a data breach, data loss or regulatory breach happens to the bank, it's not something that can be undone and it could result in the loss of customers' trust. These risks are therefore treated as priorities equal to the High-rated risks, with avoidance or strong mitigation (Table 18), and are reviewed at every steering committee meeting.
+
+![Figure 6. Risk heat map (probability × impact)](../figures/risk-heat-map.png)
+
 ## 7.5 Quantitative Analysis
 
 ## 7.6 Risk Responses
