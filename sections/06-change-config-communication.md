@@ -114,10 +114,51 @@ The repository is available at **[add GitHub repository link]**. Screenshots of 
 
 ## 12.1 Objectives
 
+The communication plan makes sure that each stakeholder receives the right information, at the right time, through the right channel, so that decisions are made on time and nobody is surprised by a change or an outage. It builds on the stakeholder analysis in Section 3.7.
+
 ## 12.2 Communication Matrix
+
+Table: Table 25. Communication matrix
+
+| Stakeholder | Information | Method | Frequency | Owner |
+|---------------------|----------------------------------------|----------------------|--------------------|-------------|
+| Sponsor | Status, decisions needed, risks above threshold, contingency use | Meeting and written status report | Fortnightly | Project manager |
+| Steering committee | Progress against baseline (SPI, CPI), top risks and issues, change decisions | Meeting with dashboard pack | Monthly, and for the Wave 3 go/no-go | Project manager |
+| Change Control Board | Change requests and impact assessments | Meeting; GitHub Issues | Weekly when CRs are open | Project manager |
+| Project team | Progress, blockers and next steps | Stand-up meeting (15 minutes) | Daily | Project manager |
+| Project team | Detailed plans, risks and lessons learned | Team meeting | Weekly | Project manager |
+| AWS and partner | Delivery progress, issues, scope | Vendor meeting | Weekly | Project manager and cloud architect |
+| Business system owners | Wave plans, UAT schedule, cutover plans | Workshops and email | At each wave stage | Project manager and test lead |
+| Bank staff | What is changing, training dates, cutover dates | Intranet news, email, training sessions | Monthly, and two weeks before each go-live | Change and training manager |
+| IT operations and support | Runbooks, handover and support rosters | Handover sessions and documentation | Before each go-live | Cloud architect |
+| Customers | Internet banking changes and the planned outage window | Email, website and in-app notices | At least 14 days and again 2 days before the Wave 3 cutover | Change and training manager |
+| APRA | Notifications required under prudential standards | Formal notification by the compliance team | As required, including before the first production workload moves | Security and compliance lead |
+| Board and internal audit | Summary of progress and compliance status | Board paper and audit briefing | Quarterly | Sponsor |
+| Media and public | Statement only if a customer-facing incident occurs | Press statement | As required | Bank communications team |
 
 ## 12.3 Reporting
 
+The project manager issues a weekly status report that rates schedule, cost, risk and quality as green, amber or red, with a short explanation of anything not green. The monthly steering committee pack adds earned value measures (schedule performance index and cost performance index), milestone status, changes to the risk heat map, the issue and change logs, and contingency drawdown. Each wave ends with a lessons-learned report that is shared with the next wave's team.
+
 ## 12.4 Escalation
 
+Escalation follows the issue priorities in Table 19. A matter moves from the team member to the project manager, then to the sponsor, then to the steering committee, with a response time set by its priority. A P1 matter, such as a failed cutover or a security incident, goes straight to the sponsor by phone, and an incident bridge is opened.
+
 # 13 Team Collaboration Using Jira
+
+This section describes how our team of four managed the preparation of this report. We used Jira to plan and track the work, GitHub to control the documents (Section 11), and a group chat for quick questions.
+
+**Board set-up.** We created a Jira board with an epic for each member's part of the report and a task for each piece of work, such as writing a section, reviewing a teammate's section or preparing the evidence screenshots. Each task was assigned to its owner, given a due date, and moved across the columns To Do, In Progress, In Review and Done. A task moved to In Review when its pull request was opened in GitHub and to Done when the pull request was approved and merged. This meant the board always showed the real state of the document.
+
+**Ways of working.** We met regularly to review the board, agree priorities and resolve blockers. Shared facts – such as dates, the budget and role names – were agreed first in the project brief, so that every section used the same information.
+
+Table: Table 26. Team member contributions
+
+| Team member | Report sections | Other responsibilities |
+|-----------------------------|-------------------------------------------|-------------------------------------------|
+| Dasula Bandara | 1 Introduction; 3 Project Charter | Stakeholder analysis |
+| Daham Warnakulasuriya | 4 WBS; 5 Schedule and Gantt Chart; 6 Resources and RASCI | Schedule and Gantt chart workbook |
+| Malmika Sandagomi | 2 Literature Review; 7 Risk; 8 Issues; 9 Quality | Risk register and heat map |
+| Md Sahadat Hossain Shikdar | 10 Change Requests; 11 Configuration Management; 12 Communication; 13 Collaboration; 14 Conclusion | Jira and GitHub administration; references; final formatting |
+
+Screenshots of the Jira board at the start, middle and end of the work are included in Appendix B.
