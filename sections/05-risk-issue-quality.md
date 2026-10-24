@@ -57,6 +57,21 @@ The heat map also shows a cluster of risks in the Severe impact column (R01, R03
 
 ## 7.5 Quantitative Analysis
 
+**Expected monetary value (EMV).** EMV multiplies the probability of a risk by its cost impact [@schwalbe]. Table 17 provides the estimated EMV for the five risks where a reasonable estimate of the cost impact can be made. Their total, AUD 400,000, is the basis for the contingency reserve in the budget (Table 8). The contingency reserve is held by the sponsor and released through the change request process.
+
+Table: Table 17. Expected monetary value of the top cost risks
+
+| ID | Risk | Probability | Cost impact (AUD) | EMV (AUD) |
+|------|---------------------------------------|-----------:|-----------:|----------:|
+| R01 | Data loss or corruption (recovery, rework, remediation) | 20% | 500,000 | 100,000 |
+| R02 | Cutover overrun (rollback, repeat cutover, customer compensation) | 30% | 200,000 | 60,000 |
+| R06 | Undocumented dependencies (redesign and rework) | 55% | 180,000 | 99,000 |
+| R07 | Internet banking refactor overrun (extra partner effort) | 35% | 300,000 | 105,000 |
+| R08 | AWS cost overrun during the project | 30% | 120,000 | 36,000 |
+| | **Total (contingency reserve)** | | | **400,000** |
+
+**Three-point estimate for the refactor.** The internet banking refactor (6.2.1) is the largest and most uncertain activity. Using an optimistic estimate of 40 days, a most likely estimate of 50 days and a pessimistic estimate of 75 days, the PERT expected duration is (40 + 4 × 50 + 75) / 6 = 52.5 days, with a standard deviation of (75 − 40) / 6 ≈ 5.8 days. The activity has 18 days of float, so it can take up to 68 days without delaying Wave 3. That is about 2.7 standard deviations above the expected duration, which gives roughly a 99% chance that the refactor alone will not delay the go-live. When looking at the main schedule exposure in Wave 3, it is the testing chain on the critical path, not the build. This is the reason that the plan includes three spare cutover weekends for Wave 3 (Section 5.4).
+
 ## 7.6 Risk Responses
 
 ## 7.7 Risk Monitoring and Control
