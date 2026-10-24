@@ -74,7 +74,32 @@ Table: Table 17. Expected monetary value of the top cost risks
 
 ## 7.6 Risk Responses
 
+Table 18 outlines the response strategy (avoid, mitigate, transfer or accept), what will be done in advance to address the risk, the contingency plan if the risk materialises and the trigger that would trigger the contingency plan.
+
+Table: Table 18. Risk response plan
+
+| ID | Strategy | Response actions | Contingency plan | Trigger |
+|------|------------|----------------------------------------|--------------------------------|--------------------------|
+| R01 | Mitigate | Full backup before every cutover; at least one trial migration per wave; automated reconciliation of record counts and checksums | Roll back to the legacy system, which stays available until the stability period ends; restore from backup | Any reconciliation mismatch on a critical table |
+| R02 | Mitigate | Time the cutover steps in trial runs; timed runbook with checkpoints; go/no-go criteria | Roll back at the Sunday 2 pm decision point so the legacy system is ready for Monday | Cutover more than 2 hours behind the runbook |
+| R03 | Mitigate | Landing zone guardrails; least-privilege access; automated configuration checks; penetration test before each go-live; independent audit (7.3.1) | Incident response plan: isolate resources, investigate, notify APRA within the required time if the incident is material [@apra234] | Critical alert from security monitoring or audit |
+| R04 | Avoid | Early compliance assessment (7.1.1); regulator notification (7.2.1) before the first production workload; compliance lead on the Change Control Board | Pause the affected wave and agree a remediation plan | Compliance gap identified or regulator query received |
+| R05 | Avoid | Guardrails that block AWS regions outside Australia; contract clause on data location with the SaaS vendor | Remove the data and report the incident | Monitoring alert for a resource in a non-approved region |
+| R06 | Mitigate | Automated discovery plus interviews (2.1.1–2.2.1); dependency map signed off by system owners; interface tests in every trial migration | Move the affected system to a later wave; use contingency | An interface fails in a trial migration |
+| R07 | Mitigate and transfer | Partner contract with fixed-price milestones; fortnightly demonstrations; scope locked at design sign-off; 18 days of float | Reduce scope: refactor the critical customer journeys and replatform the rest | Partner delivers under 80% of planned work for two fortnights |
+| R08 | Mitigate | AWS budgets and cost alerts; resource tagging; right-sizing after hypercare | Cost optimisation review; use contingency | Monthly cost above 110% of forecast |
+| R09 | Mitigate | AWS training for IT operations staff; pairing with partner engineers; knowledge transfer during hypercare | Extend partner support after go-live | Skills gaps found in the training needs analysis (8.1.1) |
+| R10 | Accept | Prefer portable technologies (for example, standard databases) where practical; keep a documented exit plan [@oparamartins2016] | Use the exit plan if commercial terms change | Major change to AWS pricing or terms |
+| R11 | Mitigate | Documentation standards; a named backup for every key role; partner bench resources | Partner backfills the role | Resignation or long absence |
+| R12 | Mitigate | Proof of concept for each system during discovery; choose replatform or repurchase where needed | Keep the system on-premises temporarily and move it to a later wave | Proof of concept fails |
+| R13 | Mitigate | Measure performance before migration; performance and load testing in Waves 2 and 3 | Scale up resources; tune the application | Response time more than 10% worse than the baseline |
+| R14 | Mitigate | Change impact assessment; change champions in each business unit; training before each go-live | Extra floor support during hypercare | Low training attendance or a spike in help-desk calls |
+| R15 | Transfer | Contracts with milestone payments and penalties; weekly vendor meetings | Escalate to vendor management; partner provides substitute resources | Vendor milestone missed |
+| R16 | Mitigate | Three spare cutover weekends; weekly critical path tracking | Cut over on 14–16 January 2028; closure moves to early March 2028, before the hardware deadline | Wave 3 UAT not complete by 2 December 2027 |
+
 ## 7.7 Risk Monitoring and Control
+
+Each risk has a named owner who monitors its trigger. The project manager reviews the full register fortnightly with the risk owners, and the steering committee reviews the High and Severe-impact risks monthly. New risks can be raised by anyone through Jira and are assessed within one week. The project manager can release up to AUD 50,000 of contingency for a single risk; anything larger needs the sponsor's approval. Each wave's lessons-learned review (4.6.2, 5.6.3, 6.7.2) updates the probabilities and impacts so that the register reflects what the project has actually experienced.
 
 # 8 Issue Management
 
