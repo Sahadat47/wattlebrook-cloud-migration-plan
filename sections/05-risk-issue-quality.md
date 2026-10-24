@@ -136,10 +136,37 @@ Table: Table 20. Issue log (illustrative entries)
 
 ## 9.1 Quality Approach
 
+Quality means that each migrated system meets its requirements, performs at least as well as before, and keeps customer data safe and compliant. The approach follows the aim of ISO 9001 – consistently meeting customer and regulatory requirements and continually improving [@iso9001] – and uses the plan–do–check–act (PDCA) cycle across the three waves. It is organised into quality planning (setting standards and metrics), quality assurance (making sure the processes are followed) and quality control (checking the outputs) [@schwalbe].
+
 ## 9.2 Quality Standards and Metrics
+
+Table: Table 21. Quality metrics
+
+| Area | Metric | Target | Measured by | When |
+|----------------|----------------------------------------|----------------------|---------------|-------------|
+| Data | Records reconciled by count and checksum | 100% | Data Migration Specialist | Every trial and cutover |
+| Availability | Monthly availability of each migrated system | At least 99.9% | Cloud Architect | First 3 months after go-live |
+| Performance | 95th percentile response time under peak load | No worse than the pre-migration baseline | Test Lead | Before each go-live |
+| Security | Open critical or high findings | Zero at go-live | Security and Compliance Lead | Before each go-live |
+| Defects | Open severity-1 and severity-2 defects | Zero at go-live | Test Lead | Each go/no-go |
+| User acceptance | Critical UAT test cases passed | 100% | Business system owners | Each UAT |
+| Recovery | Disaster recovery test to the Melbourne region | Restore within 4 hours with no more than 15 minutes of data loss | Cloud Architect | Waves 2 and 3 |
+| Documentation | Designs and runbooks peer-reviewed before approval | 100% | Project Manager | Each design |
 
 ## 9.3 Quality Assurance
 
+- Peer review of every design, runbook and test plan before approval.
+- Architecture review of the landing zone and each wave design by the cloud architect and the partner.
+- An independent security audit after Wave 1 (7.3.1) and compliance reviews before each wave.
+- A process audit at each lessons-learned review to check that the agreed processes were followed, with corrective actions for the next wave.
+
 ## 9.4 Quality Control
 
+- Testing at several levels: functional and integration testing, security and penetration testing, performance and load testing, user acceptance testing and a disaster recovery test.
+- Data validation at every trial migration and cutover, using automated reconciliation reports.
+- Defects logged in Jira with four severity levels, triaged daily during test phases, and retested after fixing.
+- A go/no-go checklist for every cutover. All of the following must be true: UAT is signed off; no severity-1 or severity-2 defects are open; no critical or high security findings are open; the reconciliation rehearsal passed; staff training is complete; the rollback plan is tested; and support rosters are confirmed.
+
 ## 9.5 Continuous Improvement
+
+Each wave closes with a lessons-learned review. Its actions are added to the next wave's design and runbooks before that wave's trial migration starts – a dependency built into the schedule (Section 5.1). This applies the PDCA cycle across the three waves, so the most critical systems in Wave 3 benefit from two rounds of improvement.
