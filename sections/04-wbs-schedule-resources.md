@@ -87,6 +87,29 @@ The schedule is baselined when the project management plan is approved (task 1.2
 
 ## 6.1 Resource Plan
 
+Table 13 shows the internal project team, their allocation and their cost. The total equals the AUD 1.9 million internal staff budget in Table 8. The AWS partner consultancy provides about 800 person-days at an average of AUD 1,250 per day (AUD 1.0 million): about 120 days for the landing zone, 200 days for the Wave 1 and Wave 2 builds, 400 days for the internet banking refactor and 80 days for the loan origination replatform.
+
+Table: Table 13. Internal resource allocation and cost
+
+| Role | Name | Allocation | Days | Day rate (AUD) | Cost (AUD) |
+|-------------------------------|----------------|------------|-----:|------:|----------:|
+| Project manager | Arjun Mehta | 100% | 250 | 1,200 | 300,000 |
+| Cloud architect | Sarah Kim | 100% (Feb–Jan, less leave) | 240 | 1,300 | 312,000 |
+| Security and compliance lead | Thomas Walker | 80% | 200 | 1,250 | 250,000 |
+| Data migration specialist | Mei Ling Tan | 100% (from Feb) | 220 | 1,100 | 242,000 |
+| Network engineer | Lucas Silva | 50% | 125 | 1,000 | 125,000 |
+| Test lead | Olivia Brown | 80% (from May) | 150 | 1,000 | 150,000 |
+| Test analysts (2) | To be assigned | 100% (May–Dec) | 300 | 800 | 240,000 |
+| Change and training manager | Ahmed Hassan | 60% | 150 | 940 | 141,000 |
+| Business subject-matter experts and UAT testers (backfill) | Business units | As scheduled | – | – | 140,000 |
+| **Total internal labour** | | | | | **1,900,000** |
+
 ## 6.2 Resource Levelling
+
+The schedule was checked for people who are over-allocated:
+
+- **Sarah Kim (cloud architect)** is the most constrained resource. The three wave designs (4.1.1, 5.1.1 and 6.1.1) are therefore scheduled one after another rather than in parallel. This is why the Wave 2 and Wave 3 designs start in late May and June.
+- **Thomas Walker (security and compliance lead)** is double-booked from 15 to 21 April 2027, when identity and access management (3.3.1) overlaps the regulator notification (7.2.1). Activity 7.2.1 has 60 days of float, so it can be moved to May without affecting any milestone. The partner's security engineer also carries out the hands-on configuration work for 3.3.1.
+- **Olivia Brown (test lead)** oversees performance testing at the same time as functional testing in Waves 2 and 3 (5.4.1 with 5.4.3, and 6.5.1 with 6.5.3). The two test analysts carry out the performance tests while the test lead coordinates.
 
 ## 6.3 Responsibility Matrix (RASCI)
