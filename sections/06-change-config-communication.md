@@ -145,3 +145,20 @@ The project manager issues a weekly status report that rates schedule, cost, ris
 Escalation follows the issue priorities in Table 19. A matter moves from the team member to the project manager, then to the sponsor, then to the steering committee, with a response time set by its priority. A P1 matter, such as a failed cutover or a security incident, goes straight to the sponsor by phone, and an incident bridge is opened.
 
 # 13 Team Collaboration Using Jira
+
+This section describes how our team of four managed the preparation of this report. We used Jira to plan and track the work, GitHub to control the documents (Section 11), and a group chat for quick questions.
+
+**Board set-up.** We created a Jira board with an epic for each member's part of the report and a task for each piece of work, such as writing a section, reviewing a teammate's section or preparing the evidence screenshots. Each task was assigned to its owner, given a due date, and moved across the columns To Do, In Progress, In Review and Done. A task moved to In Review when its pull request was opened in GitHub and to Done when the pull request was approved and merged. This meant the board always showed the real state of the document.
+
+**Ways of working.** We met regularly to review the board, agree priorities and resolve blockers. Shared facts – such as dates, the budget and role names – were agreed first in the project brief, so that every section used the same information.
+
+Table: Table 26. Team member contributions
+
+| Team member | Report sections | Other responsibilities |
+|-----------------------------|-------------------------------------------|-------------------------------------------|
+| Dasula Bandara | 1 Introduction; 3 Project Charter | Stakeholder analysis |
+| Daham Warnakulasuriya | 4 WBS; 5 Schedule and Gantt Chart; 6 Resources and RASCI | Schedule and Gantt chart workbook |
+| Malmika Sandagomi | 2 Literature Review; 7 Risk; 8 Issues; 9 Quality | Risk register and heat map |
+| Md Sahadat Hossain Shikdar | 10 Change Requests; 11 Configuration Management; 12 Communication; 13 Collaboration; 14 Conclusion | Jira and GitHub administration; references; final formatting |
+
+Screenshots of the Jira board at the start, middle and end of the work are included in Appendix B.
