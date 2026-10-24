@@ -2,6 +2,11 @@
 
 Each version of the project plan, newest first. Tag the commit with the version number on GitHub.
 
+## v0.9 – reviewed draft
+
+- Every section reviewed by another member and the review comments applied.
+- Section 14 Conclusion added.
+
 ## v0.5 – first full draft
 
 - First full draft of Sections 1 to 13, each written on its own branch and merged through a reviewed pull request.
