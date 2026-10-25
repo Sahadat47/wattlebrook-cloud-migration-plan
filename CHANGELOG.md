@@ -2,6 +2,10 @@
 
 Each version of the project plan, newest first. Tag the commit with the version number on GitHub.
 
+## v1.0 – submitted version
+
+- Final version of the project plan, submitted for assessment.
+
 ## v0.9 – reviewed draft
 
 - Every section reviewed by another member and the review comments applied.
