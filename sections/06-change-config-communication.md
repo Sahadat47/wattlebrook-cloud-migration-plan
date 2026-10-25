@@ -108,7 +108,7 @@ The commit history, closed Issues, pull requests and tagged versions give a comp
 
 ## 11.5 Evidence
 
-The repository is available at **[add GitHub repository link]**. Screenshots of the commit history, contributors, a reviewed pull request, the change request Issues and the tagged versions are included in Appendix B.
+The repository is available at **https://github.com/Sahadat47/wattlebrook-cloud-migration-plan**. Screenshots of the commit history, contributors, a reviewed pull request, the change request Issues and the tagged versions are included in Appendix B.
 
 # 12 Communication Management Plan
 
